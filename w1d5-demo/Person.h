@@ -10,6 +10,8 @@
 
 @interface Person : NSObject
 
+@property (readonly, strong) NSString *name;
+
 - (void)eat;
 
 @end

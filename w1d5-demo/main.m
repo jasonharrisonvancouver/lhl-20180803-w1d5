@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
         [mixedArray addObject:dog];
         
         testClass(mixedArray);
-        testSelectors(mixedArray);
+//        testSelectors(mixedArray);
     }
     return 0;
 }

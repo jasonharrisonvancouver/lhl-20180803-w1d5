@@ -10,4 +10,13 @@
 
 @interface Animal : NSObject
 
+- (void)sleep;
+
+@end
+
+
+@interface MyAnimal: Animal
+
+- (void)eat;
+
 @end
