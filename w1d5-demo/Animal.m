@@ -10,4 +10,8 @@
 
 @implementation Animal
 
+- (void)sleep {
+    // Placeholder
+}
+
 @end

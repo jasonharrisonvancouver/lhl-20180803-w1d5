@@ -10,8 +10,6 @@
 
 @interface Animal (Animal_Senses)
 
-@property (strong, nonatomic, readonly) NSString *name;
-
 - (void)smell;
 - (void)taste;
 
