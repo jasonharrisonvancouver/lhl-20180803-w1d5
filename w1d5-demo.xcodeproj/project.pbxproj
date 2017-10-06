@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2AD2B5CD1F86D7B600DF8A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5CC1F86D7B600DF8A1F /* main.m */; };
+		2AD2B5D51F86DF4400DF8A1F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5D41F86DF4400DF8A1F /* Person.m */; };
+		2AD2B5D81F86DF5100DF8A1F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5D71F86DF5100DF8A1F /* Animal.m */; };
+		2AD2B5DB1F86E16200DF8A1F /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5DA1F86E16200DF8A1F /* Dog.m */; };
+		2AD2B5DE1F86E17800DF8A1F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5DD1F86E17800DF8A1F /* Student.m */; };
+		2AD2B5E41F86FDB200DF8A1F /* Animal+Animal_Senses.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5E31F86FDB200DF8A1F /* Animal+Animal_Senses.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		2AD2B5C91F86D7B600DF8A1F /* w1d5-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "w1d5-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD2B5CC1F86D7B600DF8A1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AD2B5D31F86DF4400DF8A1F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2AD2B5D41F86DF4400DF8A1F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2AD2B5D61F86DF5100DF8A1F /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		2AD2B5D71F86DF5100DF8A1F /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		2AD2B5D91F86E16200DF8A1F /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		2AD2B5DA1F86E16200DF8A1F /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		2AD2B5DC1F86E17800DF8A1F /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		2AD2B5DD1F86E17800DF8A1F /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		2AD2B5E21F86FDB200DF8A1F /* Animal+Animal_Senses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+Animal_Senses.h"; sourceTree = "<group>"; };
+		2AD2B5E31F86FDB200DF8A1F /* Animal+Animal_Senses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+Animal_Senses.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				2AD2B5CC1F86D7B600DF8A1F /* main.m */,
+				2AD2B5D31F86DF4400DF8A1F /* Person.h */,
+				2AD2B5D41F86DF4400DF8A1F /* Person.m */,
+				2AD2B5D61F86DF5100DF8A1F /* Animal.h */,
+				2AD2B5D71F86DF5100DF8A1F /* Animal.m */,
+				2AD2B5D91F86E16200DF8A1F /* Dog.h */,
+				2AD2B5DA1F86E16200DF8A1F /* Dog.m */,
+				2AD2B5DC1F86E17800DF8A1F /* Student.h */,
+				2AD2B5DD1F86E17800DF8A1F /* Student.m */,
+				2AD2B5E21F86FDB200DF8A1F /* Animal+Animal_Senses.h */,
+				2AD2B5E31F86FDB200DF8A1F /* Animal+Animal_Senses.m */,
 			);
 			path = "w1d5-demo";
 			sourceTree = "<group>";
@@ -120,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD2B5D81F86DF5100DF8A1F /* Animal.m in Sources */,
+				2AD2B5D51F86DF4400DF8A1F /* Person.m in Sources */,
+				2AD2B5DE1F86E17800DF8A1F /* Student.m in Sources */,
+				2AD2B5DB1F86E16200DF8A1F /* Dog.m in Sources */,
+				2AD2B5E41F86FDB200DF8A1F /* Animal+Animal_Senses.m in Sources */,
 				2AD2B5CD1F86D7B600DF8A1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
