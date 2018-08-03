@@ -27,13 +27,37 @@
 @end
 
 
-@interface classA <newDelegate>
-- (void)stand;
+@interface classA: NSObject <newDelegate>
 @end
 
-@interface classB <newDelegate>
-- (void)stand;
-- (void)sit;
+@implementation classA
+
+- (void)run {
+    //
+}
+
+- (void)stand {
+    //
+}
+
+@end
+
+@interface classB: NSObject <newDelegate>
+@end
+
+@implementation classB
+- (void)run {
+    //
+}
+
+- (void)stand {
+    //
+}
+
+- (void)sit {
+    //
+}
+
 @end
 
 // "Private" interface, class continuation category
@@ -42,6 +66,8 @@
 @property (readwrite, strong) NSString *name; // Override public inteface
 @property (strong, nonatomic) NSString *socialInsuranceNumber;  // Private property
 
+@property (weak, nonatomic) id<newDelegate> delegate;
+
 @end
 
 
@@ -49,16 +75,27 @@
 
 - (void)eat {
     // Placeholder
+
+    [self.delegate stand];
+    [self.delegate run];
     
-    id<newDelegate> object;
-    if ([object respondsToSelector:@selector(sit)]) {
-        [object sit];
+    
+    [self.delegate sit];  // !!!! Unsafe, may crash if delegate does not support sit !!!
+    
+    // Right way to do this is
+    if ([self.delegate respondsToSelector:@selector(sit)]) {
+        // Only call sit if we know for sure delegate supports it
+        [self.delegate sit];
     }
-//    SEL newMethod = @selector(stand);
-//    if ([object respondsToSelector:newMethod]) {
-//        [object performSelector:newMethod
-//                     withObject:nil];
-//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     Dog *myDog;
     [myDog bark];  // From Dog

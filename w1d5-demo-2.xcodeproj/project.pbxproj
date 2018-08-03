@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A4C38E31F87F0FB001D1EB6 /* ReportCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C38E21F87F0FB001D1EB6 /* ReportCard.m */; };
 		2A4C38EC1F87F187001D1EB6 /* ReportCard+AverageGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C38EB1F87F187001D1EB6 /* ReportCard+AverageGrade.m */; };
+		2AAFA7C12114C44100EBE479 /* NSDate+NSDate_MyCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFA7C02114C44100EBE479 /* NSDate+NSDate_MyCategory.m */; };
 		2AD2B5CD1F86D7B600DF8A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5CC1F86D7B600DF8A1F /* main.m */; };
 		2AD2B5D51F86DF4400DF8A1F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5D41F86DF4400DF8A1F /* Person.m */; };
 		2AD2B5D81F86DF5100DF8A1F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2B5D71F86DF5100DF8A1F /* Animal.m */; };
@@ -34,7 +35,10 @@
 		2A4C38E21F87F0FB001D1EB6 /* ReportCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportCard.m; sourceTree = "<group>"; };
 		2A4C38EA1F87F187001D1EB6 /* ReportCard+AverageGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReportCard+AverageGrade.h"; sourceTree = "<group>"; };
 		2A4C38EB1F87F187001D1EB6 /* ReportCard+AverageGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReportCard+AverageGrade.m"; sourceTree = "<group>"; };
-		2AD2B5C91F86D7B600DF8A1F /* w1d5-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "w1d5-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AAFA7BE2114BED200EBE479 /* EatProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatProtocol.h; sourceTree = "<group>"; };
+		2AAFA7BF2114C44100EBE479 /* NSDate+NSDate_MyCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSDate_MyCategory.h"; sourceTree = "<group>"; };
+		2AAFA7C02114C44100EBE479 /* NSDate+NSDate_MyCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSDate_MyCategory.m"; sourceTree = "<group>"; };
+		2AD2B5C91F86D7B600DF8A1F /* w1d5-demo-2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "w1d5-demo-2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD2B5CC1F86D7B600DF8A1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AD2B5D31F86DF4400DF8A1F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2AD2B5D41F86DF4400DF8A1F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		2AD2B5CA1F86D7B600DF8A1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AD2B5C91F86D7B600DF8A1F /* w1d5-demo */,
+				2AD2B5C91F86D7B600DF8A1F /* w1d5-demo-2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				2AD2B5CC1F86D7B600DF8A1F /* main.m */,
+				2AAFA7BE2114BED200EBE479 /* EatProtocol.h */,
+				2AAFA7BF2114C44100EBE479 /* NSDate+NSDate_MyCategory.h */,
+				2AAFA7C02114C44100EBE479 /* NSDate+NSDate_MyCategory.m */,
 				2AD2B5D31F86DF4400DF8A1F /* Person.h */,
 				2AD2B5D41F86DF4400DF8A1F /* Person.m */,
 				2AD2B5D61F86DF5100DF8A1F /* Animal.h */,
@@ -100,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AD2B5C81F86D7B600DF8A1F /* w1d5-demo */ = {
+		2AD2B5C81F86D7B600DF8A1F /* w1d5-demo-2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AD2B5D01F86D7B600DF8A1F /* Build configuration list for PBXNativeTarget "w1d5-demo" */;
+			buildConfigurationList = 2AD2B5D01F86D7B600DF8A1F /* Build configuration list for PBXNativeTarget "w1d5-demo-2" */;
 			buildPhases = (
 				2AD2B5C51F86D7B600DF8A1F /* Sources */,
 				2AD2B5C61F86D7B600DF8A1F /* Frameworks */,
@@ -112,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = "w1d5-demo";
+			name = "w1d5-demo-2";
 			productName = "w1d5-demo";
-			productReference = 2AD2B5C91F86D7B600DF8A1F /* w1d5-demo */;
+			productReference = 2AD2B5C91F86D7B600DF8A1F /* w1d5-demo-2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +130,7 @@
 		2AD2B5C11F86D7B600DF8A1F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Roland;
 				TargetAttributes = {
 					2AD2B5C81F86D7B600DF8A1F = {
@@ -133,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AD2B5C41F86D7B600DF8A1F /* Build configuration list for PBXProject "w1d5-demo" */;
+			buildConfigurationList = 2AD2B5C41F86D7B600DF8A1F /* Build configuration list for PBXProject "w1d5-demo-2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AD2B5C81F86D7B600DF8A1F /* w1d5-demo */,
+				2AD2B5C81F86D7B600DF8A1F /* w1d5-demo-2 */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AD2B5D81F86DF5100DF8A1F /* Animal.m in Sources */,
+				2AAFA7C12114C44100EBE479 /* NSDate+NSDate_MyCategory.m in Sources */,
 				2AD2B5D51F86DF4400DF8A1F /* Person.m in Sources */,
 				2A4C38E31F87F0FB001D1EB6 /* ReportCard.m in Sources */,
 				2A4C38EC1F87F187001D1EB6 /* ReportCard+AverageGrade.m in Sources */,
@@ -179,15 +187,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -227,15 +243,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -277,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AD2B5C41F86D7B600DF8A1F /* Build configuration list for PBXProject "w1d5-demo" */ = {
+		2AD2B5C41F86D7B600DF8A1F /* Build configuration list for PBXProject "w1d5-demo-2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AD2B5CE1F86D7B600DF8A1F /* Debug */,
@@ -286,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AD2B5D01F86D7B600DF8A1F /* Build configuration list for PBXNativeTarget "w1d5-demo" */ = {
+		2AD2B5D01F86D7B600DF8A1F /* Build configuration list for PBXNativeTarget "w1d5-demo-2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AD2B5D11F86D7B600DF8A1F /* Debug */,

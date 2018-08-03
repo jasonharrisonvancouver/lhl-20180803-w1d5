@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EatProtocol.h"
 
-@interface Person : NSObject
+@interface Person : NSObject <EatProtocol>
 
 @property (readonly, strong) NSString *name;
 
-- (void)eat;
+//- (void)eat;
 
 @end
 

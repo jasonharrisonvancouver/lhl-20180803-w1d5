@@ -33,8 +33,8 @@ int main(int argc, const char * argv[]) {
         [mixedArray addObject:animal];
         [mixedArray addObject:dog];
         
-        testClass(mixedArray);
-//        testSelectors(mixedArray);
+//        testClass(mixedArray);
+        testSelectors(mixedArray);
     }
     return 0;
 }
@@ -65,7 +65,9 @@ void testClass(NSArray *mixedArray) {
 void testSelectors(NSArray *mixedArray) {
     int i = 0;
     for (id object in mixedArray) {
-        if ([object respondsToSelector:@selector(eat)]) {
+        SEL eatMethodSignature = @selector(eat);
+        if ([object respondsToSelector:eatMethodSignature]) {
+            [object performSelector:eatMethodSignature];
             NSLog(@"Object %d can eat", i);
         }
         if ([object respondsToSelector:@selector(bark)]) {

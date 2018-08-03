@@ -7,16 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EatProtocol.h"
 
-@interface Animal : NSObject
+@interface Animal : NSObject <EatProtocol>
 
 - (void)sleep;
-
-@end
-
-
-@interface MyAnimal: Animal
-
-- (void)eat;
 
 @end
